@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2019",
+    "lib": [
+      "ES2019"
+    ],
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "allowJs": true
+  },
+  "exclude": [
+    "dist"
+  ],
+  "include": [
+    "src",
+    "test"
+  ]
+}

@@ -1,0 +1,18 @@
+workflow:
+  rules:
+    - if: $CI_MERGE_REQUEST_IID
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH || $CI_COMMIT_BRANCH =~ /^release\//
+
+stages:
+  - test
+
+default:
+  image: node:lts
+
+test:
+  stage: test
+  script:
+    - yarn
+    - yarn typecheck
+    - yarn lint

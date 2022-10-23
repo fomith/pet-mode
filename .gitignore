@@ -1,0 +1,60 @@
+# compiled
+/apps/*/build
+/apps/*/dist
+/libs/*/build
+/services/*/dist
+/services/*/build
+/typings/*/build
+dist
+
+# gradle
+.gradle
+/build
+
+# IDEs and editors
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IDE - IntelliJ IDEA
+.idea/*
+!.idea/codeStyles
+*.iml
+
+# macos
+.DS_Store
+
+node_modules
+*.tsbuildinfo
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# log
+/services/*/*.log
+
+# global config
+/services/*/globalConfig.json
+/services/backend/bin/
+
+# user
+.czrc
